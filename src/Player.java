@@ -10,14 +10,14 @@ public class Player {
     public Player() {
     }
 
-    public boolean playAgain(String yesorNo) {
+    public boolean playAgain(String yesOrNo) {
 
-        if (yesorNo.equals("y")) {
+        if (yesOrNo.equals("y")) {
             playAgain = true;
-        } else if (yesorNo.equals("n")) {
+        } else if (yesOrNo.equals("n")) {
             playAgain = false;
         } else {
-            System.out.println("Sorry, your input is not valid");
+            System.out.println("Sorry, your input was not valid!");
             playAgain = false;
         }
         return playAgain;
